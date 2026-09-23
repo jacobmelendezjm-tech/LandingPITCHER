@@ -34,9 +34,3 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# videos originales sin optimizar (no se usan en la web)
-/public/video/Latte art1.mp4
-/public/video/Latteart2.mp4
-/public/video/Latteart3.mp4
-/public/video/Runnig.*
