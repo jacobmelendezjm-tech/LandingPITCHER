@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -48,10 +50,14 @@ export default function Page() {
             aria-label="Inicio"
             className="flex items-center justify-self-start"
           >
-            {/* Reemplazar por el logotipo, p. ej. <Image src="/logo.svg" alt="Logo" width={120} height={40} /> */}
-            <div className="flex h-10 w-32 items-center justify-center rounded-md border border-dashed border-white/40 text-xs text-white/80">
-              Logo
-            </div>
+            <Image
+              src="/images/logo.webp"
+              alt="Poblenou Coffee Academy"
+              width={256}
+              height={256}
+              priority
+              className="size-14"
+            />
           </a>
 
           <NavigationMenu align="center">
@@ -155,6 +161,16 @@ export default function Page() {
         <div className="relative mx-auto grid w-full max-w-[1368px] grid-cols-1 gap-8 md:grid-cols-2">
           <div className="min-h-64 min-w-0 bg-white p-8 text-black">
             <Reveal from="left">
+              <Image
+                src="/images/cafe-vertido.webp"
+                alt="Café vertiéndose en una taza sobre fondo oscuro"
+                width={1200}
+                height={1800}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="mb-6 aspect-[3/2] w-full rounded-2xl object-cover object-[50%_62%] shadow-[0_0_40px_8px_rgb(0_0_0/0.35)]"
+              />
+            </Reveal>
+            <Reveal from="left">
               <h3 className="mb-4 text-3xl font-semibold">
                 ¿Qué es el latte art?
               </h3>
@@ -170,6 +186,16 @@ export default function Page() {
             </Reveal>
           </div>
           <div className="min-h-64 min-w-0 bg-black p-8 text-white">
+            <Reveal from="right">
+              <Image
+                src="/images/cafetera.webp"
+                alt="Manos sirviendo café de una jarra de vidrio en una taza blanca"
+                width={1200}
+                height={1800}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="mb-6 aspect-[3/2] w-full rounded-2xl object-cover object-[50%_58%] shadow-[0_0_40px_8px_rgb(255_255_255/0.35)]"
+              />
+            </Reveal>
             <Reveal from="right">
               <h3 className="mb-4 text-3xl font-semibold">
                 La importancia de un buen pitcher
