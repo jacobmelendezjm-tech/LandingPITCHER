@@ -159,13 +159,15 @@ export default function Page() {
                 ¿Qué es el latte art?
               </h3>
             </Reveal>
-            <p className="text-[1.7rem] leading-relaxed text-pretty break-words">
-              El latte art es la técnica de verter leche texturizada sobre un
-              espresso para dibujar figuras en la superficie, como corazones,
-              tulipanes o rosettas. Nace de la unión entre la crema del café y
-              una microespuma sedosa, y refleja el cuidado del barista en cada
-              taza.
-            </p>
+            <Reveal from="left" delay={150}>
+              <p className="text-[1.7rem] leading-relaxed text-pretty break-words">
+                El latte art es la técnica de verter leche texturizada sobre un
+                espresso para dibujar figuras en la superficie, como corazones,
+                tulipanes o rosettas. Nace de la unión entre la crema del café y
+                una microespuma sedosa, y refleja el cuidado del barista en cada
+                taza.
+              </p>
+            </Reveal>
           </div>
           <div className="min-h-64 min-w-0 bg-black p-8 text-white">
             <Reveal from="right">
@@ -173,13 +175,15 @@ export default function Page() {
                 La importancia de un buen pitcher
               </h3>
             </Reveal>
-            <p className="text-[1.7rem] leading-relaxed text-pretty break-words">
-              El pitcher es la extensión de la mano del barista. Un pico bien
-              definido permite controlar el flujo de leche y trazar líneas
-              precisas, mientras que el acero inoxidable ayuda a texturizar y a
-              medir la temperatura al tacto. Elegir el tamaño adecuado para cada
-              taza marca la diferencia en cada dibujo.
-            </p>
+            <Reveal from="right" delay={150}>
+              <p className="text-[1.7rem] leading-relaxed text-pretty break-words">
+                El pitcher es la extensión de la mano del barista. Un pico bien
+                definido permite controlar el flujo de leche y trazar líneas
+                precisas, mientras que el acero inoxidable ayuda a texturizar y
+                a medir la temperatura al tacto. Elegir el tamaño adecuado para
+                cada taza marca la diferencia en cada dibujo.
+              </p>
+            </Reveal>
           </div>
         </div>
       </section>
